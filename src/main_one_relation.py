@@ -562,7 +562,7 @@ def main(argv):
     my_word_to_vec=restore_my_word_vec(my_word_vec_path,vec_dim)
 
     # train naive bayes classifier and store the model
-    if_train_list=[True,True,True]
+    if_train_list=[False,False,False]
     for classifier_id in range(3):
         if_train=if_train_list[classifier_id]
         if(if_train==False):
