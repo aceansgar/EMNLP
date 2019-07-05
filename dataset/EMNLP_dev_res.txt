@@ -1,0 +1,45 @@
+<question id=1>	the music composition sinfonia concertante for violin, viola & orchestra in e major, k. 320d/364: iii. presto is of which track?
+<logical form id=0>	( lambda ?x ( mso:theater.composition.composer sinfonia_concertante_for_violin,_viola_&_orchestra_in_e_major,_k._320d/364:_iii._presto ?x ) )
+<parameters id=1>	sinfonia_concertante_for_violin,_viola_&_orchestra_in_e_major,_k._320d/364:_iii._presto (entity) [3,16]
+<question type id=1>	single-relation
+==================================================
+<question id=2>	kingda ka park
+<logical form id=1>	( lambda ?x ( mso:amusement_parks.ride.park kingda_ka ?x ) )
+<parameters id=2>	kingda_ka (entity) [0,1]
+<question type id=2>	single-relation
+==================================================
+<question id=3>	what is ulmer muenster 's architectures
+<logical form id=2>	( lambda ?x ( mso:architecture.structure.style ulmer_muenster ?x ) )
+<parameters id=3>	ulmer_muenster (entity) [2,3]
+<question type id=3>	single-relation
+==================================================
+<question id=4>	featured song for birds
+<logical form id=3>	( lambda ?x ( mso:theater.play.theme_song birds ?x ) )
+<parameters id=4>	birds (entity) [3,3]
+<question type id=4>	single-relation
+==================================================
+<question id=5>	banda sea outflow
+<logical form id=4>	( lambda ?x ( mso:geography.lake.outflow banda_sea ?x ) )
+<parameters id=5>	banda_sea (entity) [0,1]
+<question type id=5>	single-relation
+==================================================
+<question id=6>	chateaudeversailles architecture style
+<logical form id=5>	( lambda ?x ( mso:architecture.style.examples chateaudeversailles ?x ) )
+<parameters id=6>	chateaudeversailles (entity) [0,0]
+<question type id=6>	single-relation
+==================================================
+<question id=8>	date introduced messerschmitt me 262
+<logical form id=7>	( lambda ?x ( mso:aviation.aircraft_model.introduced messerschmitt_me_262 ?x ) )
+<parameters id=8>	messerschmitt_me_262 (entity) [2,4]
+<question type id=8>	single-relation
+==================================================
+<question id=9>	which is current division of lafayette leopards football
+<logical form id=8>	( lambda ?x ( mso:american_football.team.division lafayette_leopards_football ?x ) )
+<parameters id=9>	lafayette_leopards_football (entity) [5,7]
+<question type id=9>	single-relation
+==================================================
+<question id=10>	what is discovered elements of george de hevesy
+<logical form id=9>	( lambda ?x ( mso:people.element_discoverer.discovered george_de_hevesy ?x ) )
+<parameters id=10>	george_de_hevesy (entity) [5,7]
+<question type id=10>	single-relation
+==================================================
