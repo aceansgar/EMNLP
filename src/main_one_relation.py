@@ -595,7 +595,7 @@ def main(argv):
     raw_test_lines=test_file.readlines()
     raw_test_instances=[]
     raw_test_line_num=len(raw_test_lines)
-    print("line num of test file: "+str(raw_test_line_num))
+    # print("line num of test file: "+str(raw_test_line_num))
     raw_test_instance_num=int(raw_test_line_num/5)
     for instance_id in range(raw_test_instance_num):
         raw_instance=[]
@@ -612,7 +612,7 @@ def main(argv):
         if(instance_id%100==0):
             print("instance id: "+str(instance_id))
         words=get_words_from_instance(instance)
-        print(words)
+        # print(words)
         words_vecs=[]
         for word in words:
             if word not in my_word_to_vec:
@@ -627,8 +627,8 @@ def main(argv):
             prediction=classifier.sentence_predict(words_vecs,sub_rel_log_prob,id_to_rel)
             prediction_list.append(prediction)
         
-        print("prediction: ")
-        print(prediction_list)
+        # print("prediction: ")
+        # print(prediction_list)
 
         raw_test_instance=raw_test_instances[instance_id]
         raw_question_line=raw_test_instance[0]
