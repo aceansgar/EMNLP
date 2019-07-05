@@ -1,1 +1,1 @@
-python src/main_one_relation.py
+python main_one_relation.py
