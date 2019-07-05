@@ -609,7 +609,8 @@ def main(argv):
         if(instance["question_type"].strip()!="single-relation"):
             instance_id+=1
             continue
-        print("instance id: "+str(instance_id))
+        if(instance_id%100==0):
+            print("instance id: "+str(instance_id))
         words=get_words_from_instance(instance)
         print(words)
         words_vecs=[]
