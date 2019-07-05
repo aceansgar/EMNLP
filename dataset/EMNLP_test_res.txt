@@ -4,7 +4,7 @@
 <question type id=3>	single-relation
 ==================================================
 <question id=4>	content rating of film jumanji : welcome to the jungle ( 2017 )
-<logical form id=3>	( lambda ?x ( mso:film.film.rating jumanji_:_welcome_to_the_jungle_(_2017_) ?x ) )
+<logical form id=3>	( lambda ?x ( mso:media_common.film.rating jumanji_:_welcome_to_the_jungle_(_2017_) ?x ) )
 <parameters id=4>	jumanji_:_welcome_to_the_jungle_(_2017_) (entity) [4,12]
 <question type id=4>	single-relation
 ==================================================
@@ -199,7 +199,7 @@
 <question type id=50>	single-relation
 ==================================================
 <question id=52>	who are the tv producers belonging to the type executive producer ?
-<logical form id=51>	( lambda ?x ( mso:broadcast.producer_type.tv_producers_of_this_type executive_producer ?x ) )
+<logical form id=51>	( lambda ?x ( mso:tv.producer_type.tv_producers_of_this_type executive_producer ?x ) )
 <parameters id=52>	executive_producer (entity) [9,10]
 <question type id=52>	single-relation
 ==================================================
@@ -329,7 +329,7 @@
 <question type id=81>	single-relation
 ==================================================
 <question id=84>	when is invisible man 's first publication date
-<logical form id=83>	( lambda ?x ( mso:internet.written_work.date_of_first_publication invisible_man ?x ) )
+<logical form id=83>	( lambda ?x ( mso:visual_art.written_work.date_of_first_publication invisible_man ?x ) )
 <parameters id=84>	invisible_man (entity) [2,3]
 <question type id=84>	single-relation
 ==================================================
@@ -774,7 +774,7 @@
 <question type id=184>	single-relation
 ==================================================
 <question id=185>	form for lithium ( live at reading 1992 )
-<logical form id=184>	( lambda ?x ( mso:medicine.composition.place_of_publication lithium_(_live_at_reading_1992_) ?x ) )
+<logical form id=184>	( lambda ?x ( mso:chemistry.composition.place_of_publication lithium_(_live_at_reading_1992_) ?x ) )
 <parameters id=185>	lithium_(_live_at_reading_1992_) (entity) [2,8]
 <question type id=185>	single-relation
 ==================================================
@@ -809,7 +809,7 @@
 <question type id=192>	single-relation
 ==================================================
 <question id=193>	when is due date of form 1040
-<logical form id=192>	( lambda ?x ( mso:finance.income_tax_filing_form.deadline form_1040 ?x ) )
+<logical form id=192>	( lambda ?x ( mso:conferences.income_tax_filing_form.deadline form_1040 ?x ) )
 <parameters id=193>	form_1040 (entity) [5,6]
 <question type id=193>	single-relation
 ==================================================
@@ -1186,3 +1186,432 @@
 <question id=273>	what is famous written work authored by henrik johan ibsen
 <logical form id=272>	( lambda ?x ( mso:book.author.works_written henrik_johan_ibsen ?x ) )
 <parameters id=273>	henrik_johan_ibsen (entity) [7,9]
+<question type id=273>	single-relation
+==================================================
+<question id=274>	how tall is tom hardy
+<logical form id=273>	( lambda ?x ( mso:people.person.height tom_hardy ?x ) )
+<parameters id=274>	tom_hardy (entity) [3,4]
+<question type id=274>	single-relation
+==================================================
+<question id=275>	who competed in space soldiers vs godsent ?
+<logical form id=274>	( lambda ?x ( mso:sports.team.competitors space_soldiers_vs_godsent ?x ) )
+<parameters id=275>	space_soldiers_vs_godsent (entity) [3,6]
+<question type id=275>	single-relation
+==================================================
+<question id=276>	top list of books by krishnamurti
+<logical form id=275>	( lambda ?x ( mso:book.author.works_written krishnamurti ?x ) )
+<parameters id=276>	krishnamurti (entity) [5,5]
+<question type id=276>	single-relation
+==================================================
+<question id=277>	what is date of burial james gandolfini
+<logical form id=276>	( lambda ?x ( mso:people.deceased_person.date_of_burial james_gandolfini ?x ) )
+<parameters id=277>	james_gandolfini (entity) [5,6]
+<question type id=277>	single-relation
+==================================================
+<question id=278>	scientific name of frogs toads plant
+<logical form id=277>	( lambda ?x ( mso:biology.organism_classification.scientific_name frogs_toads ?x ) )
+<parameters id=278>	frogs_toads (entity) [3,4]
+<question type id=278>	single-relation
+==================================================
+<question id=279>	on the properties of similarity subgrid-scale models as deduced from measurements in a turbulent jet was published in which journal ?
+<logical form id=278>	( lambda ?x ( mso:ratings.scholarly_work.journal_publication on_the_properties_of_similarity_subgrid-scale_models_as_deduced_from_measurements_in_a_turbulent_jet ?x ) )
+<parameters id=279>	on_the_properties_of_similarity_subgrid-scale_models_as_deduced_from_measurements_in_a_turbulent_jet (entity) [0,14]
+<question type id=279>	single-relation
+==================================================
+<question id=280>	who is batman 's soundtrack composer
+<logical form id=279>	( lambda ?x ( mso:theater.play.music batman ?x ) )
+<parameters id=280>	batman (entity) [2,2]
+<question type id=280>	single-relation
+==================================================
+<question id=281>	bing artist
+<logical form id=280>	( lambda ?x ( mso:music.art_series.artist bing ?x ) )
+<parameters id=281>	bing (entity) [0,0]
+<question type id=281>	single-relation
+==================================================
+<question id=283>	what is the url of london ?
+<logical form id=282>	( lambda ?x ( mso:common.edition.isbn london ?x ) )
+<parameters id=283>	london (entity) [5,5]
+<question type id=283>	single-relation
+==================================================
+<question id=285>	what films belong to rating pg
+<logical form id=284>	( lambda ?x ( mso:film.content_rating.rating pg ?x ) )
+<parameters id=285>	pg (entity) [5,5]
+<question type id=285>	single-relation
+==================================================
+<question id=286>	what is the average number of days residences are vacant in us census 2000 tract 48237950400 ?
+<logical form id=285>	( lambda ?x ( mso:statistics.census_district.average_days_residential_vacant us_census_2000_tract_48237950400 ?x ) )
+<parameters id=286>	us_census_2000_tract_48237950400 (entity) [11,15]
+<question type id=286>	single-relation
+==================================================
+<question id=287>	what is appearances in book batman / bruce wayne
+<logical form id=286>	( lambda ?x ( mso:comic_books.character.appears_in_book batman_/_bruce_wayne ?x ) )
+<parameters id=287>	batman_/_bruce_wayne (entity) [5,8]
+<question type id=287>	single-relation
+==================================================
+<question id=288>	what is sherlock theme song
+<logical form id=287>	( lambda ?x ( mso:tv.program.theme_song sherlock ?x ) )
+<parameters id=288>	sherlock (entity) [2,2]
+<question type id=288>	single-relation
+==================================================
+<question id=290>	start date for evgeny mravinsky
+<logical form id=289>	( lambda ?x ( mso:time.art_period_movement.date_begun evgeny_mravinsky ?x ) )
+<parameters id=290>	evgeny_mravinsky (entity) [3,4]
+<question type id=290>	single-relation
+==================================================
+<question id=291>	blindern headquarters corporate
+<logical form id=290>	( lambda ?x ( mso:organization.organization.headquarters blindern ?x ) )
+<parameters id=291>	blindern (entity) [0,0]
+<question type id=291>	single-relation
+==================================================
+<question id=292>	when is day that ark encounter opened
+<logical form id=291>	( lambda ?x ( mso:time.quotation.follows ark_encounter ?x ) )
+<parameters id=292>	ark_encounter (entity) [4,5]
+<question type id=292>	single-relation
+==================================================
+<question id=293>	donate items to art institute of chicago
+<logical form id=292>	( lambda ?x ( mso:architecture.non_profit_organization.donate_url art_institute_of_chicago ?x ) )
+<parameters id=293>	art_institute_of_chicago (entity) [3,6]
+<question type id=293>	single-relation
+==================================================
+<question id=294>	who is apollo 16 astronauts
+<logical form id=293>	( lambda ?x ( mso:spaceflight.space_mission.astronauts apollo_16 ?x ) )
+<parameters id=294>	apollo_16 (entity) [2,3]
+<question type id=294>	single-relation
+==================================================
+<question id=295>	release track of memphis is called by what name ?
+<logical form id=294>	( lambda ?x ( mso:music.release.releases memphis ?x ) )
+<parameters id=295>	memphis (entity) [3,3]
+<question type id=295>	single-relation
+==================================================
+<question id=296>	what was the work excerpted from coventry ?
+<logical form id=295>	( lambda ?x ( mso:common.excerpted_work.excerpt coventry ?x ) )
+<parameters id=296>	coventry (entity) [6,6]
+<question type id=296>	single-relation
+==================================================
+<question id=297>	the secret garden lyrist
+<logical form id=296>	( lambda ?x ( mso:ratings.series_episode.followers the_secret_garden ?x ) )
+<parameters id=297>	the_secret_garden (entity) [0,2]
+<question type id=297>	single-relation
+==================================================
+<question id=298>	name the military service that occured in the armed force united states army
+<logical form id=297>	( lambda ?x ( mso:military.armed_force.personnel united_states_army ?x ) )
+<parameters id=298>	united_states_army (entity) [10,12]
+<question type id=298>	single-relation
+==================================================
+<question id=299>	france3 aquitaine 's former names
+<logical form id=298>	( lambda ?x ( mso:biology.network.former_names france3_aquitaine ?x ) )
+<parameters id=299>	france3_aquitaine (entity) [0,1]
+<question type id=299>	single-relation
+==================================================
+<question id=300>	soundtrack composer for movie need for speed ( + bonus )
+<logical form id=299>	( lambda ?x ( mso:film.film.music need_for_speed_(_+_bonus_) ?x ) )
+<parameters id=300>	need_for_speed_(_+_bonus_) (entity) [4,10]
+<question type id=300>	single-relation
+==================================================
+<question id=301>	artist of reanimation
+<logical form id=300>	( lambda ?x ( mso:visual_art.art_series.artist reanimation ?x ) )
+<parameters id=301>	reanimation (entity) [2,2]
+<question type id=301>	single-relation
+==================================================
+<question id=303>	which is rated of movie isle of dogs
+<logical form id=302>	( lambda ?x ( mso:film.content_rating.rating isle_of_dogs ?x ) )
+<parameters id=303>	isle_of_dogs (entity) [5,7]
+<question type id=303>	single-relation
+==================================================
+<question id=304>	when is itunes 's latest launch date
+<logical form id=303>	( lambda ?x ( mso:computer.website.latest_release_date itunes ?x ) )
+<parameters id=304>	itunes (entity) [2,2]
+<question type id=304>	single-relation
+==================================================
+<question id=305>	state the sibling of heinrich ii von kurzbach, jr.
+<logical form id=304>	( lambda ?x ( mso:people.person.summary heinrich_ii_von_kurzbach,_jr. ?x ) )
+<parameters id=305>	heinrich_ii_von_kurzbach,_jr. (entity) [4,8]
+<question type id=305>	single-relation
+==================================================
+<question id=306>	what is final version due date for icmset 2014
+<logical form id=305>	( lambda ?x ( mso:conferences.academic_conference.final_version_due_date icmset_2014 ?x ) )
+<parameters id=306>	icmset_2014 (entity) [7,8]
+<question type id=306>	single-relation
+==================================================
+<question id=307>	who is batman / bruce wayne parents
+<logical form id=306>	( lambda ?x ( mso:people.character.parents batman_/_bruce_wayne ?x ) )
+<parameters id=307>	batman_/_bruce_wayne (entity) [2,5]
+<question type id=307>	single-relation
+==================================================
+<question id=308>	mention the name of the country in which dr. evans oil-free defense day tinted moisturizer spf 55 30/100/50/20/60 liquid is available
+<logical form id=307>	( lambda ?x ( mso:medicine.manufactured_drug_form.available_in dr._evans_oil-free_defense_day_tinted_moisturizer_spf_55_30/100/50/20/60_liquid ?x ) )
+<parameters id=308>	dr._evans_oil-free_defense_day_tinted_moisturizer_spf_55_30/100/50/20/60_liquid (entity) [8,18]
+<question type id=308>	single-relation
+==================================================
+<question id=309>	writer of accel world book
+<logical form id=308>	( lambda ?x ( mso:book.literary_series.author accel_world ?x ) )
+<parameters id=309>	accel_world (entity) [2,3]
+<question type id=309>	single-relation
+==================================================
+<question id=310>	specify the video that features hände zum himmel [club mix]
+<logical form id=309>	( lambda ?x ( mso:commerce.software_version.video hände_zum_himmel_[club_mix] ?x ) )
+<parameters id=310>	hände_zum_himmel_[club_mix] (entity) [5,9]
+<question type id=310>	single-relation
+==================================================
+<question id=311>	what is best terry . pratchett 's list of books
+<logical form id=310>	( lambda ?x ( mso:book.author.works_written terry_._pratchett ?x ) )
+<parameters id=311>	terry_._pratchett (entity) [3,5]
+<question type id=311>	single-relation
+==================================================
+<question id=312>	image comics renowned comic book
+<logical form id=311>	( lambda ?x ( mso:comic_books.publisher.comic_book_series_published image_comics ?x ) )
+<parameters id=312>	image_comics (entity) [0,1]
+<question type id=312>	single-relation
+==================================================
+<question id=313>	what automobiles does ettore bugatti design
+<logical form id=312>	( lambda ?x ( mso:automotive.designer.automobiles_designed ettore_bugatti ?x ) )
+<parameters id=313>	ettore_bugatti (entity) [3,4]
+<question type id=313>	single-relation
+==================================================
+<question id=314>	state the diameter of the steering wheel intended for driving on the left in 2010 saab 9-3x sportcombi (xwd) 1sb , in meters
+<logical form id=313>	( lambda ?x ( mso:automotive.automotive_class.left_steering_diameter 2010_saab_9-3x_sportcombi_(xwd)_1sb ?x ) )
+<parameters id=314>	2010_saab_9-3x_sportcombi_(xwd)_1sb (entity) [14,19]
+<question type id=314>	single-relation
+==================================================
+<question id=315>	what is esrb rating game krypton
+<logical form id=314>	( lambda ?x ( mso:media_common.creative_work.content_rating krypton ?x ) )
+<parameters id=315>	krypton (entity) [5,5]
+<question type id=315>	single-relation
+==================================================
+<question id=316>	constellation of messier 74
+<logical form id=315>	( lambda ?x ( mso:astronomy.galaxy.constellation messier_74 ?x ) )
+<parameters id=316>	messier_74 (entity) [2,3]
+<question type id=316>	single-relation
+==================================================
+<question id=317>	who produced hurricane alley ?
+<logical form id=316>	( lambda ?x ( mso:meteorology.tropical_cyclone.total_fatalities hurricane_alley ?x ) )
+<parameters id=317>	hurricane_alley (entity) [2,3]
+<question type id=317>	single-relation
+==================================================
+<question id=318>	famous comics list jacques martin
+<logical form id=317>	( lambda ?x ( mso:comic_books.creator.series jacques_martin ?x ) )
+<parameters id=318>	jacques_martin (entity) [3,4]
+<question type id=318>	single-relation
+==================================================
+<question id=319>	when is date established central park
+<logical form id=318>	( lambda ?x ( mso:protected_sites.protected_site.date_established central_park ?x ) )
+<parameters id=319>	central_park (entity) [4,5]
+<question type id=319>	single-relation
+==================================================
+<question id=320>	what is indians league
+<logical form id=319>	( lambda ?x ( mso:baseball.team.league indians ?x ) )
+<parameters id=320>	indians (entity) [2,2]
+<question type id=320>	single-relation
+==================================================
+<question id=321>	what is language for book ethan frome ( dodo press )
+<logical form id=320>	( lambda ?x ( mso:book.written_work.original_language ethan_frome_(_dodo_press_) ?x ) )
+<parameters id=321>	ethan_frome_(_dodo_press_) (entity) [5,10]
+<question type id=321>	single-relation
+==================================================
+<question id=323>	what is theme songs from titanic ( behind the scenes )
+<logical form id=322>	( lambda ?x ( mso:theater.play.theme_song titanic_(_behind_the_scenes_) ?x ) )
+<parameters id=323>	titanic_(_behind_the_scenes_) (entity) [5,10]
+<question type id=323>	single-relation
+==================================================
+<question id=324>	what is mall of america 's floor space
+<logical form id=323>	( lambda ?x ( mso:architecture.building_complex.floor_space_square_meters mall_of_america ?x ) )
+<parameters id=324>	mall_of_america (entity) [2,4]
+<question type id=324>	single-relation
+==================================================
+<question id=325>	which company is game assassin 's creed iii 's developing companies
+<logical form id=324>	( lambda ?x ( mso:cvg.game_version.developer assassin_'s_creed_iii ?x ) )
+<parameters id=325>	assassin_'s_creed_iii (entity) [4,7]
+<question type id=325>	single-relation
+==================================================
+<question id=326>	famous record trace adkins
+<logical form id=325>	( lambda ?x ( mso:music.artist.album trace_adkins ?x ) )
+<parameters id=326>	trace_adkins (entity) [2,3]
+<question type id=326>	single-relation
+==================================================
+<question id=327>	what was fixodent neutral no zinc added denture adhesive cream made of ?
+<logical form id=326>	( lambda ?x ( mso:chemistry.manufactured_drug_form.available_in fixodent_neutral_no_zinc_added_denture_adhesive_cream ?x ) )
+<parameters id=327>	fixodent_neutral_no_zinc_added_denture_adhesive_cream (entity) [2,9]
+<question type id=327>	single-relation
+==================================================
+<question id=328>	royal birkdale golf club par
+<logical form id=327>	( lambda ?x ( mso:sports.golf_course.par royal_birkdale_golf_club ?x ) )
+<parameters id=328>	royal_birkdale_golf_club (entity) [0,3]
+<question type id=328>	single-relation
+==================================================
+<question id=329>	which is popular cheng long 's records
+<logical form id=328>	( lambda ?x ( mso:music.artist.album cheng_long ?x ) )
+<parameters id=329>	cheng_long (entity) [3,4]
+<question type id=329>	single-relation
+==================================================
+<question id=330>	phase at stp of formaldehyde
+<logical form id=329>	( lambda ?x ( mso:chemistry.chemical_compound.phase_at_stp formaldehyde ?x ) )
+<parameters id=330>	formaldehyde (entity) [4,4]
+<question type id=330>	single-relation
+==================================================
+<question id=331>	keanu reeves nationality
+<logical form id=330>	( lambda ?x ( mso:people.person.nationality_adjectival keanu_reeves ?x ) )
+<parameters id=331>	keanu_reeves (entity) [0,1]
+<question type id=331>	single-relation
+==================================================
+<question id=332>	what is burial place for don knotts
+<logical form id=331>	( lambda ?x ( mso:people.deceased_person.place_of_burial don_knotts ?x ) )
+<parameters id=332>	don_knotts (entity) [5,6]
+<question type id=332>	single-relation
+==================================================
+<question id=334>	what is scale in symphony no. 9
+<logical form id=333>	( lambda ?x ( mso:theater.composition.musical_scale symphony_no._9 ?x ) )
+<parameters id=334>	symphony_no._9 (entity) [4,6]
+<question type id=334>	single-relation
+==================================================
+<question id=335>	pantera negra 's mpaa rating
+<logical form id=334>	( lambda ?x ( mso:media_common.creative_work.rating pantera_negra ?x ) )
+<parameters id=335>	pantera_negra (entity) [0,1]
+<question type id=335>	single-relation
+==================================================
+<question id=338>	what is architectural style of arena di verona
+<logical form id=337>	( lambda ?x ( mso:architecture.structure.style arena_di_verona ?x ) )
+<parameters id=338>	arena_di_verona (entity) [5,7]
+<question type id=338>	single-relation
+==================================================
+<question id=339>	carbonyl iron 's brand names
+<logical form id=338>	( lambda ?x ( mso:medicine.drug.drug_brand carbonyl_iron ?x ) )
+<parameters id=339>	carbonyl_iron (entity) [0,1]
+<question type id=339>	single-relation
+==================================================
+<question id=340>	what is typhoon talim 's highest winds
+<logical form id=339>	( lambda ?x ( mso:meteorology.tropical_cyclone.highest_winds typhoon_talim ?x ) )
+<parameters id=340>	typhoon_talim (entity) [2,3]
+<question type id=340>	single-relation
+==================================================
+<question id=341>	what is joshua humphreys 's ships designed
+<logical form id=340>	( lambda ?x ( mso:boats.ship_designer.boats_designed joshua_humphreys ?x ) )
+<parameters id=341>	joshua_humphreys (entity) [2,3]
+<question type id=341>	single-relation
+==================================================
+<question id=343>	when is completion date of the creation of adam
+<logical form id=342>	( lambda ?x ( mso:visual_art.artwork.date_completed the_creation_of_adam ?x ) )
+<parameters id=343>	the_creation_of_adam (entity) [5,8]
+<question type id=343>	single-relation
+==================================================
+<question id=344>	what do people from ghana speak
+<logical form id=343>	( lambda ?x ( mso:location.sovereign.official_language ghana ?x ) )
+<parameters id=344>	ghana (entity) [4,4]
+<question type id=344>	single-relation
+==================================================
+<question id=345>	what is island groups culebra , puerto rico
+<logical form id=344>	( lambda ?x ( mso:location.competition.island_group culebra_,_puerto_rico ?x ) )
+<parameters id=345>	culebra_,_puerto_rico (entity) [4,7]
+<question type id=345>	single-relation
+==================================================
+<question id=346>	colleges for the alligator
+<logical form id=345>	( lambda ?x ( mso:education.school_newspaper.school the_alligator ?x ) )
+<parameters id=346>	the_alligator (entity) [2,3]
+<question type id=346>	single-relation
+==================================================
+<question id=347>	tv program creator of the x - files
+<logical form id=346>	( lambda ?x ( mso:tv.program.program_creator the_x_-_files ?x ) )
+<parameters id=347>	the_x_-_files (entity) [4,7]
+<question type id=347>	single-relation
+==================================================
+<question id=348>	which is title of margaret weis
+<logical form id=347>	( lambda ?x ( mso:book.author.works_written margaret_weis ?x ) )
+<parameters id=348>	margaret_weis (entity) [4,5]
+<question type id=348>	single-relation
+==================================================
+<question id=349>	film suicide squad ( 2016 ) 's production companies
+<logical form id=348>	( lambda ?x ( mso:film.film.production_company suicide_squad_(_2016_) ?x ) )
+<parameters id=349>	suicide_squad_(_2016_) (entity) [1,5]
+<question type id=349>	single-relation
+==================================================
+<question id=350>	equatorial circumference moon
+<logical form id=349>	( lambda ?x ( mso:astronomy.celestial_object.equatorial_circumference moon ?x ) )
+<parameters id=350>	moon (entity) [2,2]
+<question type id=350>	single-relation
+==================================================
+<question id=351>	what is star castor
+<logical form id=350>	( lambda ?x ( mso:astronomy.star_system.star castor ?x ) )
+<parameters id=351>	castor (entity) [3,3]
+<question type id=351>	single-relation
+==================================================
+<question id=353>	what is pc-9800 series launch date
+<logical form id=352>	( lambda ?x ( mso:computer.website.launch_date pc-9800_series ?x ) )
+<parameters id=353>	pc-9800_series (entity) [2,3]
+<question type id=353>	single-relation
+==================================================
+<question id=354>	first performance place of salome
+<logical form id=353>	( lambda ?x ( mso:theater.play.place_of_first_performance salome ?x ) )
+<parameters id=354>	salome (entity) [4,4]
+<question type id=354>	single-relation
+==================================================
+<question id=355>	common bos taurus scientific name
+<logical form id=354>	( lambda ?x ( mso:biology.organism_classification.scientific_name bos_taurus ?x ) )
+<parameters id=355>	bos_taurus (entity) [1,2]
+<question type id=355>	single-relation
+==================================================
+<question id=356>	what is the name of the hospital which dr. david m. painter is affliated to
+<logical form id=355>	( lambda ?x ( mso:event.physician.hospital_affiliation dr._david_m._painter ?x ) )
+<parameters id=356>	dr._david_m._painter (entity) [8,11]
+<question type id=356>	single-relation
+==================================================
+<question id=357>	who produced pilot ?
+<logical form id=356>	( lambda ?x ( mso:aviation.producer.producer pilot ?x ) )
+<parameters id=357>	pilot (entity) [2,2]
+<question type id=357>	single-relation
+==================================================
+<question id=358>	when is the birth of venus starting date
+<logical form id=357>	( lambda ?x ( mso:time.artwork.date_begun the_birth_of_venus ?x ) )
+<parameters id=358>	the_birth_of_venus (entity) [2,5]
+<question type id=358>	single-relation
+==================================================
+<question id=359>	when is first lit of sombrero
+<logical form id=358>	( lambda ?x ( mso:event.lighthouse.year_first_lit sombrero ?x ) )
+<parameters id=359>	sombrero (entity) [5,5]
+<question type id=359>	single-relation
+==================================================
+<question id=360>	name the child organization of fresh del monte produce, inc.
+<logical form id=359>	( lambda ?x ( mso:organization.organization.founder fresh_del_monte_produce,_inc. ?x ) )
+<parameters id=360>	fresh_del_monte_produce,_inc. (entity) [5,9]
+<question type id=360>	single-relation
+==================================================
+<question id=362>	where is arena lakers
+<logical form id=361>	( lambda ?x ( mso:basketball.team.facility lakers ?x ) )
+<parameters id=362>	lakers (entity) [3,3]
+<question type id=362>	single-relation
+==================================================
+<question id=364>	what is famous adaptations for " storybook love " from the princess bride
+<logical form id=363>	( lambda ?x ( mso:theater.adapted_work.adaptations "_storybook_love_"_from_the_princess_bride ?x ) )
+<parameters id=364>	"_storybook_love_"_from_the_princess_bride (entity) [5,12]
+<question type id=364>	single-relation
+==================================================
+<question id=365>	name the language spoken fluently by w. scott murphy
+<logical form id=364>	( lambda ?x ( mso:book.programming_language_designer.language w._scott_murphy ?x ) )
+<parameters id=365>	w._scott_murphy (entity) [6,8]
+<question type id=365>	single-relation
+==================================================
+<question id=366>	team color motherwell football & athletic club ltd
+<logical form id=365>	( lambda ?x ( mso:sports.team.color motherwell_football_&_athletic_club_ltd ?x ) )
+<parameters id=366>	motherwell_football_&_athletic_club_ltd (entity) [2,7]
+<question type id=366>	single-relation
+==================================================
+<question id=367>	whih city is represented by yugoslav army
+<logical form id=366>	( lambda ?x ( mso:military.combatant.military_conflicts yugoslav_army ?x ) )
+<parameters id=367>	yugoslav_army (entity) [5,6]
+<question type id=367>	single-relation
+==================================================
+<question id=368>	what is the uri of pinterest ?
+<logical form id=367>	( lambda ?x ( mso:common.webpage.uri pinterest ?x ) )
+<parameters id=368>	pinterest (entity) [5,5]
+<question type id=368>	single-relation
+==================================================
+<question id=369>	typhoon nesat top wind speed
+<logical form id=368>	( lambda ?x ( mso:meteorology.tropical_cyclone.highest_winds typhoon_nesat ?x ) )
+<parameters id=369>	typhoon_nesat (entity) [0,1]
+<question type id=369>	single-relation
+==================================================
+<question id=370>	star of ursa major
+<logical form id=369>	( lambda ?x ( mso:astronomy.star_system.contains ursa_major ?x ) )
+<parameters id=370>	ursa_major (entity) [2,3]
+<question type id=370>	single-relation
+==================================================
+<question id=371>	which is nfl conference vikings
+<logical form id=370>	( lambda ?x ( mso:american_football.team.conference 
